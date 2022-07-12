@@ -14,3 +14,5 @@ let kRoomsJsonFilename = "AvailableRooms"
 let kContactCellIdentifier = "contactCell"
 let kRoomCellIdentifier = "roomsCell"
 let kCategoryCellIdentifier = "categoryCell"
+
+
