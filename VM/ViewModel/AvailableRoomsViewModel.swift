@@ -11,12 +11,10 @@ enum Room: String {
     case available = "Available"
     case notAvailable = "Not Available"
 }
-
-
 final class AvailableRoomsViewModel {
      
     var roomsResponse = [RoomsList]()
-    let apiServiceProtocol: APIServiceProtocol
+    var apiServiceProtocol: APIServiceProtocol
     
     init(apiService: APIServiceProtocol) {
         self.apiServiceProtocol = apiService
@@ -29,13 +27,13 @@ final class AvailableRoomsViewModel {
             return
         }
         
-        apiServiceProtocol.getAPIData(requestUrl: url, resultType: Rooms.self) { success, data, error in
+        apiServiceProtocol.getAPIData(requestUrl: url, resultType: Rooms.self) { [weak self] success, data, error in
             guard let response = data else {
                 return completion(false, nil, error)
             }
             
             if let roomsList = response as? [RoomsList] {
-                self.roomsResponse = roomsList
+                self?.roomsResponse = roomsList
             }
             completion(success, response, error)
         }
@@ -58,14 +56,28 @@ final class AvailableRoomsViewModel {
     }
 }
 
-//class MockData: appDependencyModelService {
-//    func getAPIData<T>(requestUrl: URL, resultType: T.Type, completionHandler: @escaping (ServiceCallback)) where T : Decodable {
-//        
-//    }
-//    
-//    func getRoomsAvailability(index: Int) -> String {
-//         
-//        return Room.available.rawValue
-//    }
-//}
+
+
+class MockAPIService: APIServiceProtocol {
+    
+    var isFetchPopularPhotoCalled = false 
+    var completeClosure: ((_ success:Bool,_ data:Any?,_ error:ServiceError?) -> Void)!
+    
+    func getAPIData<T>(requestUrl: URL, resultType: T.Type, completionHandler: @escaping (ServiceCallback)) where T : Decodable {
+        
+        isFetchPopularPhotoCalled = true
+        completeClosure = completionHandler
+    }
+    
+    func fetchSuccess() {
+        completeClosure( true, [Rooms](), nil )
+    }
+    
+    func fetchFail(error: ServiceError?) {
+        completeClosure( false, [Rooms](), error )
+    }
+}
+
+
+
 

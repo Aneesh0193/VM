@@ -12,14 +12,14 @@ import XCTest
 
 class AvailableRoomsViewModelTests: XCTestCase {
     
-    var availableRoomsViewModel = AvailableRoomsViewModel(dependency: MockData())
+    var sut: AvailableRoomsViewModel = AvailableRoomsViewModel(apiService: MockAPIService())
     
     //MARK: - SetUpWithError
     override func setUp() {
         super.setUp()
-        loadJson()
+        loadJson()  
     }
-   
+    
     //MARK: - Load Json
     func loadJson(){
         if let url = Bundle.main.url(forResource: kRoomsJsonFilename, withExtension: "json") {
@@ -27,7 +27,7 @@ class AvailableRoomsViewModelTests: XCTestCase {
                 let data = try Data(contentsOf: url)
                 let decoder = JSONDecoder()
                 let jsonData = try decoder.decode(Rooms.self, from: data)
-                self.availableRoomsViewModel.roomsResponse = jsonData
+                self.sut.roomsResponse = jsonData
                 getData()
             } catch {
                 debugPrint(error)
@@ -35,17 +35,18 @@ class AvailableRoomsViewModelTests: XCTestCase {
         }
     }
     
-    func getNumberOfRowsInSections() {
-        _ = availableRoomsViewModel.getNumberOfRowsInSections()
+    func getNumberOfRowsInSections() { 
+        let count = sut.getNumberOfRowsInSections()
+        XCTAssertEqual(0, count)
     }
     
     func getData() {
-        _ = availableRoomsViewModel.getData(index: 0)
+        _ = sut.getData(index: 0)
     }
     
     func getRoomsAvailability() {
         
-        _ = availableRoomsViewModel.getRoomsAvailability(index: 0)
+        _ = sut.getRoomsAvailability(index: 0)
     }
     
     

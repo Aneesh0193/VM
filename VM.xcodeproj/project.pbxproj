@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B4E9774287F120D00087182 /* AvailableRoomsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4E9773287F120D00087182 /* AvailableRoomsViewModel.swift */; };
+		3B4E9776287F126600087182 /* AvailableRoomsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4E9775287F126600087182 /* AvailableRoomsViewModel.swift */; };
+		3B4E9778287F128E00087182 /* ContactsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4E9777287F128E00087182 /* ContactsViewModelTests.swift */; };
 		3B64151B287CCF1D00B4C2E3 /* UserDetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B64151A287CCF1D00B4C2E3 /* UserDetailedViewController.swift */; };
 		5772612D282C754000712654 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5772612C282C754000712654 /* AppDelegate.swift */; };
 		5772612F282C754000712654 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5772612E282C754000712654 /* SceneDelegate.swift */; };
 		57726137282C754000712654 /* VM.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 57726135282C754000712654 /* VM.xcdatamodeld */; };
 		57726139282C754100712654 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57726138282C754100712654 /* Assets.xcassets */; };
 		5772613C282C754100712654 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5772613A282C754100712654 /* LaunchScreen.storyboard */; };
-		57726147282C754100712654 /* ContactsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57726146282C754100712654 /* ContactsViewModelTests.swift */; };
 		57726152282C754100712654 /* VMUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57726151282C754100712654 /* VMUITests.swift */; };
 		57726161282C75B200712654 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57726160282C75B200712654 /* Main.storyboard */; };
 		57726167282C760F00712654 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57726165282C760F00712654 /* AppConstants.swift */; };
@@ -31,13 +33,11 @@
 		57726188282CF76900712654 /* ContactViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57726187282CF76900712654 /* ContactViewModel.swift */; };
 		5772618A282D08DD00712654 /* ContactListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57726189282D08DD00712654 /* ContactListTableViewCell.swift */; };
 		5772618C282D21F500712654 /* RoomsAvailabeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5772618B282D21F500712654 /* RoomsAvailabeViewController.swift */; };
-		5772618E282D22C500712654 /* AvailableRoomsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5772618D282D22C500712654 /* AvailableRoomsViewModel.swift */; };
 		57726190282D237500712654 /* Rooms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5772618F282D237500712654 /* Rooms.swift */; };
 		57726192282D39FC00712654 /* RoomsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57726191282D39FC00712654 /* RoomsTableViewCell.swift */; };
 		57726194282D8EFE00712654 /* ContactTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57726193282D8EFE00712654 /* ContactTests.swift */; };
 		57726199282D97CF00712654 /* ContactsList.json in Sources */ = {isa = PBXBuildFile; fileRef = 57726198282D97CF00712654 /* ContactsList.json */; };
 		5772619B282DA9C600712654 /* RoomsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5772619A282DA9C600712654 /* RoomsTests.swift */; };
-		5772619D282DAB3200712654 /* AvailableRoomsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5772619C282DAB3200712654 /* AvailableRoomsViewModel.swift */; };
 		5772619F282DABD600712654 /* AvailableRooms.json in Sources */ = {isa = PBXBuildFile; fileRef = 5772619E282DABD600712654 /* AvailableRooms.json */; };
 		577261A1282DC00200712654 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577261A0282DC00200712654 /* UIView+Extension.swift */; };
 /* End PBXBuildFile section */
@@ -60,6 +60,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3B4E9773287F120D00087182 /* AvailableRoomsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvailableRoomsViewModel.swift; sourceTree = "<group>"; };
+		3B4E9775287F126600087182 /* AvailableRoomsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvailableRoomsViewModel.swift; sourceTree = "<group>"; };
+		3B4E9777287F128E00087182 /* ContactsViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsViewModelTests.swift; sourceTree = "<group>"; };
 		3B64151A287CCF1D00B4C2E3 /* UserDetailedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailedViewController.swift; sourceTree = "<group>"; };
 		57726129282C754000712654 /* VM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5772612C282C754000712654 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -69,7 +72,6 @@
 		5772613B282C754100712654 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5772613D282C754100712654 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		57726142282C754100712654 /* VMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		57726146282C754100712654 /* ContactsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewModelTests.swift; sourceTree = "<group>"; };
 		57726148282C754100712654 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5772614D282C754100712654 /* VMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VMUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		57726151282C754100712654 /* VMUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMUITests.swift; sourceTree = "<group>"; };
@@ -90,13 +92,11 @@
 		57726187282CF76900712654 /* ContactViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewModel.swift; sourceTree = "<group>"; };
 		57726189282D08DD00712654 /* ContactListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListTableViewCell.swift; sourceTree = "<group>"; };
 		5772618B282D21F500712654 /* RoomsAvailabeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomsAvailabeViewController.swift; sourceTree = "<group>"; };
-		5772618D282D22C500712654 /* AvailableRoomsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvailableRoomsViewModel.swift; sourceTree = "<group>"; };
 		5772618F282D237500712654 /* Rooms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rooms.swift; sourceTree = "<group>"; };
 		57726191282D39FC00712654 /* RoomsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomsTableViewCell.swift; sourceTree = "<group>"; };
 		57726193282D8EFE00712654 /* ContactTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTests.swift; sourceTree = "<group>"; };
 		57726198282D97CF00712654 /* ContactsList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ContactsList.json; sourceTree = "<group>"; };
 		5772619A282DA9C600712654 /* RoomsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomsTests.swift; sourceTree = "<group>"; };
-		5772619C282DAB3200712654 /* AvailableRoomsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvailableRoomsViewModel.swift; sourceTree = "<group>"; };
 		5772619E282DABD600712654 /* AvailableRooms.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = AvailableRooms.json; sourceTree = "<group>"; };
 		577261A0282DC00200712654 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -177,10 +177,10 @@
 		57726145282C754100712654 /* VMTests */ = {
 			isa = PBXGroup;
 			children = (
-				57726146282C754100712654 /* ContactsViewModelTests.swift */,
+				3B4E9777287F128E00087182 /* ContactsViewModelTests.swift */,
+				3B4E9775287F126600087182 /* AvailableRoomsViewModel.swift */,
 				57726193282D8EFE00712654 /* ContactTests.swift */,
 				5772619A282DA9C600712654 /* RoomsTests.swift */,
-				5772619C282DAB3200712654 /* AvailableRoomsViewModel.swift */,
 				57726148282C754100712654 /* Info.plist */,
 			);
 			path = VMTests;
@@ -237,7 +237,7 @@
 		57726174282C765100712654 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				5772618D282D22C500712654 /* AvailableRoomsViewModel.swift */,
+				3B4E9773287F120D00087182 /* AvailableRoomsViewModel.swift */,
 				57726187282CF76900712654 /* ContactViewModel.swift */,
 			);
 			path = ViewModel;
@@ -421,9 +421,9 @@
 				57726168282C760F00712654 /* Enum.swift in Sources */,
 				5772618A282D08DD00712654 /* ContactListTableViewCell.swift in Sources */,
 				57726186282C768700712654 /* APIPath.swift in Sources */,
-				5772618E282D22C500712654 /* AvailableRoomsViewModel.swift in Sources */,
 				57726137282C754000712654 /* VM.xcdatamodeld in Sources */,
 				577261A1282DC00200712654 /* UIView+Extension.swift in Sources */,
+				3B4E9774287F120D00087182 /* AvailableRoomsViewModel.swift in Sources */,
 				5772616B282C762D00712654 /* UIViewController+Extension.swift in Sources */,
 				5772617A282C765B00712654 /* ContactDetailsViewController.swift in Sources */,
 				5772612F282C754000712654 /* SceneDelegate.swift in Sources */,
@@ -438,8 +438,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				57726194282D8EFE00712654 /* ContactTests.swift in Sources */,
-				5772619D282DAB3200712654 /* AvailableRoomsViewModel.swift in Sources */,
-				57726147282C754100712654 /* ContactsViewModelTests.swift in Sources */,
+				3B4E9778287F128E00087182 /* ContactsViewModelTests.swift in Sources */,
+				3B4E9776287F126600087182 /* AvailableRoomsViewModel.swift in Sources */,
 				5772619B282DA9C600712654 /* RoomsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -9,7 +9,7 @@ import Foundation
 
 final class ContactViewModel {
 
-    private var contactResponse = Contacts()
+    var contactResponse = Contacts()
     private let apiServiceProtocol: APIServiceProtocol
     
     init(apiService: APIServiceProtocol) {

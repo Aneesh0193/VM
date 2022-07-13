@@ -10,7 +10,7 @@ import XCTest
 
 class VMTests: XCTestCase {
     
-    var contactViewModel = ContactViewModel()
+    var contactViewModel = ContactViewModel(apiService: HttpUtility())
     
     //MARK: - SetUpWithError
     override func setUp() {
